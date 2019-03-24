@@ -52,12 +52,19 @@ var game = {
             ctx.strokeRect(this.x, this.y, this.width, this.height);
             ctx.restore();
 
+            //todo
             if (game.pressedKeyCode && game.pressedKeyCode == "ArrowLeft") {
                 this.angle += 0.1;
             }
             if (game.pressedKeyCode && game.pressedKeyCode == "ArrowRight") {
                 this.angle -= 0.1;
             }
+        },
+        leftX: function () {
+            return this.x;
+        },
+        rightX: function () {
+            return this.x + this.width;
         }
     },
 
@@ -65,16 +72,43 @@ var game = {
         cx: 0,
         cy: 70,
         r: 50,
-        speed: 0.5,
+        speedX: 0.5,
+        speedY: 0,
         gravity: 0.5,
+        dropped: false,
         update: function () {
-            ctx.save();
-            var angle = game.beam.angle;
-            ctx.rotate(angle);
-            this.cx += this.speed;
-            this.speed += Math.sin(-angle) * this.gravity;
-            ctx.arc(this.cx, this.cy, this.r, 0, 2 * Math.PI);
-            ctx.restore();
+            if (this.isOnBeam()) {
+                ctx.save();
+                var angle = game.beam.angle;
+                ctx.rotate(angle);
+                this.cx += this.speedX;
+                this.speedX += Math.sin(-angle) * this.gravity;
+                ctx.arc(this.cx, this.cy, this.r, 0, 2 * Math.PI);
+                ctx.restore();
+            } else {
+                if (!this.dropped) {
+                    // first time out the beam
+                    // translate cx,cy(not the coordinates system)
+                    var cosine = Math.cos(game.beam.angle);
+                    var sine = Math.sin(game.beam.angle);
+                    var nx = cosine * this.cx - sine * this.cy;
+                    var ny = sine * this.cx + cosine * this.cy;
+                    this.cx = nx;
+                    this.cy = ny;
+                    this.dropped = true;
+                    this.speedY = sine * this.speedX;
+                    this.speedX = cosine * this.speedX;
+                }
+                ctx.arc(this.cx, this.cy, this.r, 0, 2 * Math.PI);
+                this.cx += this.speedX;
+                this.cy += this.speedY;
+                this.speedY -= this.gravity;
+            }
+        },
+
+        // judge whether current the ball is on beam
+        isOnBeam: function () {
+            return this.cx > game.beam.leftX() - this.r / 2 && this.cx < game.beam.rightX() + this.r / 2;
         }
     },
 
