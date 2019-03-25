@@ -1,6 +1,7 @@
 var canvas;
 var ctx;
 var intervalID;
+var frameCnt = 0;
 $(document).ready(function () {
     canvas = document.getElementById("mainCanvas");
     ctx = canvas.getContext("2d");
@@ -9,14 +10,20 @@ $(document).ready(function () {
     coordinatesToCenter();
     window.addEventListener("keypress", function (e) {
         console.log(e.key);
-        if (e.key == "a") {
+        if (e.key === "a") {
             game.beam.angle += 0.01;
-        } else if (e.key == "d") {
+        } else if (e.key === "d") {
             game.beam.angle -= 0.01;
         }
     });
-    intervalID = setInterval(update, 8);
+    intervalID = setInterval(update, 10);
+    intervalID = setInterval(FPSRateDisplay, 1000);
 });
+
+function FPSRateDisplay() {
+    $("#fps").text("FPS Rate:" + frameCnt);
+    frameCnt = 0;
+}
 
 function coordinatesToCenter() {
     ctx.transform(1, 0, 0, -1, canvas.cx, canvas.cy);
@@ -53,10 +60,10 @@ var game = {
             ctx.restore();
 
             //todo
-            if (game.pressedKeyCode && game.pressedKeyCode == "ArrowLeft") {
+            if (game.pressedKeyCode && game.pressedKeyCode === "ArrowLeft") {
                 this.angle += 0.1;
             }
-            if (game.pressedKeyCode && game.pressedKeyCode == "ArrowRight") {
+            if (game.pressedKeyCode && game.pressedKeyCode === "ArrowRight") {
                 this.angle -= 0.1;
             }
         },
@@ -120,12 +127,14 @@ var game = {
             ctx.lineTo(200, 0);
         }
     },
+
     update: function () {
         ctx.beginPath();
         this.beam.update();
         this.ball.update();
-        this.coordinates.update();
+        // this.coordinates.update();
         ctx.stroke();
+        frameCnt += 1;
     }
 };
 
