@@ -1,19 +1,24 @@
+
 var canvas;
 var ctx;
 var intervalID;
 var frameCnt = 0;
+var left = 0;
+var right = 0;
+var socketConn;
 $(document).ready(function () {
     canvas = document.getElementById("mainCanvas");
     ctx = canvas.getContext("2d");
     canvas.cx = canvas.width / 2;
     canvas.cy = canvas.height / 2;
     coordinatesToCenter();
+    socketConn = new SockJS("http://localhost:8080/sock/sock");
     window.addEventListener("keypress", function (e) {
         console.log(e.key);
         if (e.key === "a") {
-            game.beam.angle += 0.01;
+            socketConn.send("left");
         } else if (e.key === "d") {
-            game.beam.angle -= 0.01;
+            socketConn.send("right");
         }
     });
     intervalID = setInterval(update, 10);

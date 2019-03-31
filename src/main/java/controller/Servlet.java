@@ -1,19 +1,21 @@
 package controller;
 
+import org.apache.commons.logging.Log;
+import org.apache.log4j.Logger;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.servlet.ModelAndView;
-import org.springframework.web.servlet.mvc.AbstractController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 
+@Controller
 public class Servlet {
+
+    @GetMapping(value = "/game.html")
     public String handle(Model model, HttpSession session) {
-        model.addAttribute("message", "Hello World!");
-        String id = session.getId();
-        return "index";
+        model.addAttribute("sid", session.getId());
+        return "ballBeam";
     }
+
 }
