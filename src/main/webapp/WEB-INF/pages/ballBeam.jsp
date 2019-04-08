@@ -13,7 +13,7 @@
 <h1>Ball and Beam</h1>
 <h1>${sid}</h1>
 <input id="roomID" type="text">
-<h1 id="fps">FPS:</h1>
+<h1 id="points">FPS:</h1>
 <canvas id="mainCanvas" width="1000" height="690" style="border:2px solid #000000;">
 
 </canvas>
