@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello 512</title>
+
+</head>
+
+<body>
+<h1>current room: [[${roomID}]]</h1>
+<h1 id="points">FPS:</h1>
+<form id="leaveRoom" th:action="@{/leaveRoom}" method="post">
+    <input type="submit" value="leave room"/>
+</form>
+<canvas id="mainCanvas" width="1000" height="690" style="border:2px solid #000000;"></canvas>
+
+<!-- javascript lib -->
+<script type="text/javascript" th:src="@{/js/lib/jquery-3.3.1.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/sockjs.min.js}"></script>
+<script type="text/javascript" th:src="@{/js/lib/stomp.min.js}"></script>
+
+<!-- server side defined js variable -->
+<script th:inline="javascript">
+    /*<![CDATA[*/
+
+    var webSocketConnectPath = /*[[${sockEntryPath}]]*/ 'Fail to evaluate the path';
+    var username = /*[[${username}]]*/ 'Fail to evaluate the username';
+    var highestPoints = /*[[${highestPoint}]]*/ 'Fail to evaluate the path';
+    var roomInfo = /*[[${roomInfo}]]*/ '';
+    roomInfo = JSON.parse(roomInfo);
+    $('#leaveRoom').submit(function(){ //listen for submit event
+
+            $('<input />').attr('type', 'hidden')
+                .attr('name', "points")
+                .attr('value', highestPoints)
+                .appendTo('#leaveRoom');
+        return true;
+    });
+
+    /*]]>*/
+</script>
+
+<script type="text/javascript" th:src="@{/js/communication.js}"></script>
+<script type="text/javascript" th:src="@{/js/game_tmp.js}"></script>
+
+<script>
+
+</script>
+</body>
+</html>

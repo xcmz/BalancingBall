@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+>
+<head>
+    <title>Hello World!</title>
+</head>
+<body>
+<div>
+    <form th:action="@{/logout}" method="post">
+        <input type="submit" value="Sign Out"/>
+    </form>
+    <h1 th:inline="text">Hello [[${user.getUsername()}]]!</h1>
+    <h1 th:inline="text"> your highest points: [[${user.getHighestPoint()}]]!</h1>
+</div>
+<script type="text/javascript" th:src="@{/js/communication.js}"></script>
+<div th:if="${createdRoomID != null}">
+    the room id is: <div style="font-weight: bold">[[${createdRoomID}]]</div>
+</div>
+<div th:if="${tips != null}">
+    Operation fail: [[${tips}]]
+</div>
+<form th:action="@{/createRoom}" method="post">
+    <input type="submit" value="create room"/>
+</form>
+
+<h1>
+    Room list
+</h1>
+<table border="3">
+    <tr>
+        <td>room ID</td>
+        <td>current User</td>
+    </tr>
+    <th:block th:each="room : ${rooms}">
+        <tr>
+            <td th:text="${room.getRoomID()}">...</td>
+            <td th:text="${room.currentUserAmount()}">...</td>
+            <td>
+                <form th:action="@{/joinRoom/{roomID}(roomID=${room.getRoomID()})}" method="get">
+                    <input type="submit" value="join"/>
+                </form>
+            </td>
+        </tr>
+    </th:block>
+</table>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+    <property name="logFilePath" value="./logs" />
+
+    <appender
+            name="consoleAppender"
+            class="ch.qos.logback.core.ConsoleAppender">
+        <encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
+            <layout class="ch.qos.logback.classic.PatternLayout">
+                <Pattern>
+                    %highlight(%-5level) %d{HH:mm:ss.SS} %logger{50}.%boldBlue(%M):%n%red(----) %yellow(%message) %n
+                </Pattern>
+            </layout>
+        </encoder>
+    </appender>
+
+    <root level="INFO">
+        <appender-ref ref="consoleAppender" />
+    </root>
+</configuration>

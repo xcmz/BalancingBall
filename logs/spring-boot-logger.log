@@ -1,0 +1,36 @@
+2019-04-12 01:04:24,553 INFO org.springframework.boot.StartupInfoLogger [main] Starting BallbeamgameApplication on DESKTOP-3UR6K6G with PID 12248 (F:\Projects\ballBeamGameMQ\target\classes started by 24501 in F:\Projects\ballBeamGameMQ)
+2019-04-12 01:04:24,553 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-04-12 01:04:25,480 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-04-12 01:04:25,496 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-12 01:04:25,512 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-04-12 01:04:25,512 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-12 01:04:25,605 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-04-12 01:04:25,605 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1005 ms
+2019-04-12 01:04:25,777 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-12 01:04:26,011 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-04-12 01:04:26,027 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-12 01:04:26,043 INFO org.springframework.boot.StartupInfoLogger [main] Started BallbeamgameApplication in 1.771 seconds (JVM running for 2.886)
+2019-04-12 01:05:25,276 INFO org.springframework.boot.StartupInfoLogger [main] Starting BallbeamgameApplication on DESKTOP-3UR6K6G with PID 10872 (F:\Projects\ballBeamGameMQ\target\classes started by 24501 in F:\Projects\ballBeamGameMQ)
+2019-04-12 01:05:25,291 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-04-12 01:05:26,419 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-04-12 01:05:26,419 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-12 01:05:26,435 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-04-12 01:05:26,435 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-12 01:05:26,528 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-04-12 01:05:26,528 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1174 ms
+2019-04-12 01:05:26,716 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-12 01:05:26,950 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-04-12 01:05:26,966 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-12 01:05:26,981 INFO org.springframework.boot.StartupInfoLogger [main] Started BallbeamgameApplication in 2.049 seconds (JVM running for 3.098)
+2019-04-12 01:05:49,791 INFO org.springframework.boot.StartupInfoLogger [main] Starting BallbeamgameApplication on DESKTOP-3UR6K6G with PID 13724 (F:\Projects\ballBeamGameMQ\target\classes started by 24501 in F:\Projects\ballBeamGameMQ)
+2019-04-12 01:05:49,791 INFO org.springframework.boot.SpringApplication [main] No active profile set, falling back to default profiles: default
+2019-04-12 01:05:50,699 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat initialized with port(s): 8080 (http)
+2019-04-12 01:05:50,715 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8080"]
+2019-04-12 01:05:50,715 INFO org.apache.juli.logging.DirectJDKLog [main] Starting service [Tomcat]
+2019-04-12 01:05:50,715 INFO org.apache.juli.logging.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-04-12 01:05:50,809 INFO org.apache.juli.logging.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2019-04-12 01:05:50,809 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 987 ms
+2019-04-12 01:05:50,981 INFO org.springframework.scheduling.concurrent.ExecutorConfigurationSupport [main] Initializing ExecutorService 'applicationTaskExecutor'
+2019-04-12 01:05:51,184 INFO org.apache.juli.logging.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8080"]
+2019-04-12 01:05:51,215 INFO org.springframework.boot.web.embedded.tomcat.TomcatWebServer [main] Tomcat started on port(s): 8080 (http) with context path ''
+2019-04-12 01:05:51,215 INFO org.springframework.boot.StartupInfoLogger [main] Started BallbeamgameApplication in 1.692 seconds (JVM running for 2.788)

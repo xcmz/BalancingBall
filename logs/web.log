@@ -1,0 +1,55 @@
+2019-04-12 01:09:26,469 DEBUG org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-04-12 01:09:26,469 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1064 ms
+2019-04-12 01:09:26,547 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-04-12 01:09:26,547 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-04-12 01:09:26,656 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-04-12 01:09:26,688 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [main] 
+	c.c.b.c.HelloController:
+	{ /}: hello()
+2019-04-12 01:09:26,688 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [main] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error}: error(HttpServletRequest)
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+2019-04-12 01:09:26,688 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [main] 3 mappings in 'requestMappingHandlerMapping'
+2019-04-12 01:09:26,703 DEBUG org.springframework.web.servlet.handler.AbstractDetectingUrlHandlerMapping [main] Detected 0 mappings in 'beanNameHandlerMapping'
+2019-04-12 01:09:26,703 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-04-12 01:09:26,703 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-04-12 01:09:26,703 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-04-12 01:09:26,703 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-04-12 01:09:52,779 DEBUG org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-04-12 01:09:52,779 INFO org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 1049 ms
+2019-04-12 01:09:52,873 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped [/**/favicon.ico] onto ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]
+2019-04-12 01:09:52,873 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-04-12 01:09:52,982 DEBUG org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter [main] ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-04-12 01:09:53,013 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [main] 
+	c.c.b.c.HelloController:
+	{ /}: hello()
+2019-04-12 01:09:53,013 TRACE org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [main] 
+	o.s.b.a.w.s.e.BasicErrorController:
+	{ /error, produces [text/html]}: errorHtml(HttpServletRequest,HttpServletResponse)
+	{ /error}: error(HttpServletRequest)
+2019-04-12 01:09:53,013 DEBUG org.springframework.web.servlet.handler.AbstractHandlerMethodMapping [main] 3 mappings in 'requestMappingHandlerMapping'
+2019-04-12 01:09:53,013 DEBUG org.springframework.web.servlet.handler.AbstractDetectingUrlHandlerMapping [main] Detected 0 mappings in 'beanNameHandlerMapping'
+2019-04-12 01:09:53,029 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped [/webjars/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/webjars/"]
+2019-04-12 01:09:53,029 TRACE org.springframework.web.servlet.handler.AbstractUrlHandlerMapping [main] Mapped [/**] onto ResourceHttpRequestHandler ["classpath:/META-INF/resources/", "classpath:/resources/", "classpath:/static/", "classpath:/public/", "/"]
+2019-04-12 01:09:53,029 DEBUG org.springframework.web.servlet.handler.SimpleUrlHandlerMapping [main] Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2019-04-12 01:09:53,029 DEBUG org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver [main] ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-04-12 01:10:05,039 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Initializing Servlet 'dispatcherServlet'
+2019-04-12 01:10:05,041 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] Detected org.springframework.web.multipart.support.StandardServletMultipartResolver@4e85c1e0
+2019-04-12 01:10:05,046 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] No LocaleResolver 'localeResolver': using default [AcceptHeaderLocaleResolver]
+2019-04-12 01:10:05,047 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] No ThemeResolver 'themeResolver': using default [FixedThemeResolver]
+2019-04-12 01:10:05,049 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] No RequestToViewNameTranslator 'viewNameTranslator': using default [DefaultRequestToViewNameTranslator]
+2019-04-12 01:10:05,052 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] No FlashMapManager 'flashMapManager': using default [SessionFlashMapManager]
+2019-04-12 01:10:05,052 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-04-12 01:10:05,053 INFO org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed initialization in 12 ms
+2019-04-12 01:10:05,059 TRACE org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-1] GET "/", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-04-12 01:10:05,063 TRACE org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-1] Mapped to public java.lang.String com.comp512.ballBeam.controller.HelloController.hello()
+2019-04-12 01:10:05,070 TRACE org.springframework.web.method.support.InvocableHandlerMethod [http-nio-8080-exec-1] Arguments: []
+2019-04-12 01:10:05,084 DEBUG org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor [http-nio-8080-exec-1] Using 'text/html', given [text/html, application/xhtml+xml, image/webp, image/apng, application/signed-exchange;v=b3, application/xml;q=0.9, */*;q=0.8] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+2019-04-12 01:10:05,084 TRACE org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-1] Writing ["Hello world"]
+2019-04-12 01:10:05,090 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-1] No view rendering, null ModelAndView returned.
+2019-04-12 01:10:05,091 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-1] Completed 200 OK, headers={masked}
+2019-04-12 01:10:05,791 TRACE org.springframework.core.log.LogFormatUtils [http-nio-8080-exec-2] GET "/favicon.ico", parameters={}, headers={masked} in DispatcherServlet 'dispatcherServlet'
+2019-04-12 01:10:05,795 TRACE org.springframework.web.servlet.handler.AbstractHandlerMapping [http-nio-8080-exec-2] Mapped to HandlerExecutionChain with [ResourceHttpRequestHandler [class path resource [META-INF/resources/], class path resource [resources/], class path resource [static/], class path resource [public/], ServletContext resource [/], class path resource []]] and 1 interceptors
+2019-04-12 01:10:05,813 TRACE org.springframework.web.servlet.DispatcherServlet [http-nio-8080-exec-2] No view rendering, null ModelAndView returned.
+2019-04-12 01:10:05,814 DEBUG org.springframework.web.servlet.FrameworkServlet [http-nio-8080-exec-2] Completed 200 OK, headers={masked}
